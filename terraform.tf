@@ -19,6 +19,10 @@
 # see: https://www.terraform.io/docs/backends/config.html#partial-configuration 
 #
 
+terraform {
+  backend "azurerm"{}
+}
+
 resource "azurerm_resource_group" "test" {
   name     = "${var.resource_group_name}"
   location = "${var.location}"
