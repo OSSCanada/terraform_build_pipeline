@@ -19,6 +19,13 @@
 # see: https://www.terraform.io/docs/backends/config.html#partial-configuration 
 #
 
+provider "azurerm" {
+  subscription_id = "..."
+  client_id       = "..."
+  client_secret   = "..."
+  tenant_id       = "..."
+}
+
 terraform {
   backend "azurerm"{}
 }
