@@ -20,10 +20,10 @@
 #
 
 provider "azurerm" {
-  subscription_id = "..."
-  client_id       = "..."
-  client_secret   = "..."
-  tenant_id       = "..."
+  subscription_id = "${var.SUBSCRIPTION_ID}"
+  client_id       = "${var.SERVICE_PRINCIPAL_ID}"
+  client_secret   = "${var.SERVICE_PRINCIPAL_SECRET}"
+  tenant_id       = "${var.TENANT_ID}"
 }
 
 terraform {
