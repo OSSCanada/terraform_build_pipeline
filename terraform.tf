@@ -19,15 +19,15 @@
 # see: https://www.terraform.io/docs/backends/config.html#partial-configuration 
 #
 
+terraform {
+  backend "azurerm"{}
+}
+
 provider "azurerm" {
   subscription_id = "${var.AZ_SUBSCRIPTION_ID}"
   client_id       = "${var.AZ_SERVICE_PRINCIPAL_ID}"
   client_secret   = "${var.AZ_SERVICE_PRINCIPAL_SECRET}"
   tenant_id       = "${var.AZ_TENANT_ID}"
-}
-
-terraform {
-  backend "azurerm"{}
 }
 
 resource "azurerm_resource_group" "test" {
