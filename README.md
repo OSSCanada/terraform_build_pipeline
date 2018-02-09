@@ -21,13 +21,13 @@ AZ_TENANT_ID
 
 
 # Required for configuring Azure Blob Storage as the TF Backend for TF.state
-TF_VAR_backend_access_key
-TF_VAR_backend_storage_account_name
-TF_VAR_backend_container_name
-TF_VAR_backend_key
+TF_VAR_BACKEND_ACCESS_KEY
+TF_VAR_BACKEND_STORAGE_ACCOUNT_NAME
+TF_VAR_BACKEND_CONTAINER_NAME
+TF_VAR_BACKEND_KEY
 
 
 # Azure resource varibles for this example
-TF_VAR_resource_group_name
-TF_VAR_location
+TF_VAR_RESOURCE_GROUP_NAME
+TF_VAR_LOCATION
 ```
